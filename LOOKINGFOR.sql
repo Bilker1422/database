@@ -2,5 +2,6 @@ CREATE TABLE LOOKINGFOR(
     App_ID number CONSTRAINT APP_ID_FK REFERENCES applier(App_ID) on DELETE CASCADE,
     J_Id number CONSTRAINT Job_ID_FK REFERENCES applier(App_ID) on DELETE CASCADE,
     Major_Type VARCHAR2(25) NOT NULL,
+    count NUMBER default 0,
     PRIMARY KEY (App_id,J_id)
 );
