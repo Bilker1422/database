@@ -1,0 +1,5 @@
+CREATE TABLE Applicant_skills(
+    S_Id number PRIMARY KEY,
+    APP_Id NUMBER CONSTRAINT S_FK REFERENCES applier(App_Id) ON DELETE CASCADE,
+    Skill VARCHAR2(55) NOT NULL
+);
