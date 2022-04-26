@@ -1,0 +1,5 @@
+CREATE TABLE COMPANY_Phone(
+        P_id number CONSTRAINT CPhone_PK PRIMARY KEY,
+        CPhone NUMBER NOT NULL,
+        CompanyId int NOT NULL CONSTRAINT Comp_FK_Phone REFERENCES Company(C_Id) ON DELETE CASCADE
+);
