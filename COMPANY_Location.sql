@@ -1,5 +1,5 @@
 CREATE TABLE COMPANY_Location(
-        L_id number CONSTRAINT CLocation_PK PRIMARY KEY,
-        CLocation VARCHAR2(255) NOT NULL,
-        CompanyId int NOT NULL  CONSTRAINT Comp_FK_Loct REFERENCES Company(C_Id) ON DELETE CASCADE
+        ID number CONSTRAINT CLocation_PK PRIMARY KEY,
+        Location VARCHAR2(255) NOT NULL,
+        Company int NOT NULL  CONSTRAINT Comp_FK_Loct REFERENCES Company(ID) ON DELETE CASCADE
 );
