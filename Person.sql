@@ -1,11 +1,10 @@
 CREATE TABLE Person(
-    User_ID NUMBER CONSTRAINT USER_PK PRIMARY KEY,
+    ID NUMBER CONSTRAINT USER_PK PRIMARY KEY,
     Phone_Number number,
-    Email VARCHAR2(255) NOT NULL,
-    StartData DATE NOT NULL,
-    User_Des VARCHAR2(255),
+    Email VARCHAR2(255) NOT NULL UNIQUE,
+    registration DATE NOT NULL,
+    Description VARCHAR2(255),
     F_Name VARCHAR2(15) NOT NULL,
-    M_Name VARCHAR2(15),
     L_Name VARCHAR2(15) NOT NULL,
     Gender VARCHAR2(7) NOT NULL
 );
